@@ -42,7 +42,7 @@ public class Program
                 .ForJob(jobKey)
                 .WithIdentity("RunningJob-trigger")
                 //This Cron interval can be described as "run every minute" (when second is zero)
-                .WithCronSchedule("0 15 * ? * *")
+                .WithCronSchedule("0 * * ? * *")
             );
         });
 
