@@ -1,6 +1,6 @@
 namespace Poc.Crom.Grains;
 
-public class GrainProcessamentoTeste: IGrainWithGuidKey
+public interface IGrainProcessamentoTeste: IGrainWithGuidKey
 {
-    
+    Task Processar();
 }
